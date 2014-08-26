@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<edmx:Edmx Version="1.0"
+	xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+	xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="ZSA_USERS_SRV" xml:lang="en"
+			sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="User" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Email" />
+				</Key>
+				<Property Name="Email" Type="Edm.String" Nullable="false"
+					MaxLength="100" sap:label="Character 100" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+				<Property Name="Firstname" Type="Edm.String" Nullable="false"
+					MaxLength="100" sap:label="Character 100" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+				<Property Name="Lastname" Type="Edm.String" Nullable="false"
+					MaxLength="100" sap:label="Character 100" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+				<Property Name="Age" Type="Edm.Int32" Nullable="false"
+					sap:label="AGE" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false" />
+				<Property Name="Address" Type="Edm.String" Nullable="false"
+					MaxLength="100" sap:label="ADDRESS" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false" />
+			</EntityType>
+			<EntityContainer Name="ZSA_USERS_SRV_Entities"
+				m:IsDefaultEntityContainer="true">
+				<EntitySet Name="UserSet" EntityType="ZSA_USERS_SRV.User"
+					sap:pageable="false" sap:content-version="1" />
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

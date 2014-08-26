@@ -1,0 +1,23 @@
+ [    
+      {
+        "Email" : "john@doe.com",
+        "Firstname" : "John",
+        "Lastname" : "Doe",
+        "Age" : 45,
+        "Address" : "New York, USA"
+      },
+      {
+        "Email" : "peter@smith.com",
+        "Firstname" : "Peter",
+        "Lastname" : "Smith",
+        "Age" : 52,
+        "Address" : "Paris, France"
+      },
+      {
+        "Email" : "bond@007.com",
+        "Firstname" : "James",
+        "Lastname" : "Bond",
+        "Age" : 35,
+        "Address" : "Liverpool, UK"
+      }
+]
